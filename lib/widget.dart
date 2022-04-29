@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   String titleMessage = "Merhaba ilk uygulamam";
   runApp(MaterialApp(
     home: Scaffold(
