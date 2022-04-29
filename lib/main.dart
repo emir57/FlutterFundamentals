@@ -1,3 +1,4 @@
 void main() {
-  print("Merhaba Emir");
+  String text = "Merhaba Emir";
+  print(text);
 }
