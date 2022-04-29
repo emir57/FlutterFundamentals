@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +12,13 @@ void main() {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {  },
+          onPressed: () {
+            var alert = AlertDialog(
+              title: Text("Sınav sonucu"),
+              content: Text("Geçti"),
+            );
+            showDialog(context: context, builder: (BuildContext context)=>alert);  
+          },
           child: Text("Sonucu gör"),
         ),
       ),
