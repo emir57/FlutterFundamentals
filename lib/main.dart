@@ -4,9 +4,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  String titleMessage = "Hello world!";
   runApp(MaterialApp(
-    home: Scaffold(
+    home: MyApp()
+  ));
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    String titleMessage = "Hello world!";
+    return Scaffold(
       appBar: AppBar(
         title: Text(titleMessage),
       ),
@@ -17,11 +24,12 @@ void main() {
               title: Text("Sınav sonucu"),
               content: Text("Geçti"),
             );
-            showDialog(context: context, builder: (BuildContext context)=>alert);  
+            showDialog(
+                context: context, builder: (BuildContext context) => alert);
           },
           child: Text("Sonucu gör"),
         ),
       ),
-    ),
-  ));
+    );
+  }
 }
