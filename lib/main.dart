@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   String text = "Merhaba Emir";
@@ -8,6 +9,11 @@ void main() {
   // print(text);
   // print("Doğum yılı: " + dogumYili.toString());
   // print("Oran: " + oran.toString());
-  runApp(app);
-
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text("Merhaba ilk uygulama"),
+      ),
+    ),
+  ));
 }
