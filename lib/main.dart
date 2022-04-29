@@ -8,6 +8,12 @@ void main() {
       appBar: AppBar(
         title: Text(titleMessage),
       ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {  },
+          child: Text("Sonucu gör"),
+        ),
+      ),
     ),
   ));
 }
