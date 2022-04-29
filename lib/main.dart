@@ -15,4 +15,32 @@ void main() {
   } else {
     print("Kaldınız");
   }
+
+  String note = "F";
+  switch (note) {
+    case "A":
+      {
+        print("Süper");
+      }
+      break;
+    case "B":
+      {
+        print("iyi");
+      }
+      break;
+    case "C":
+      {
+        print("idare eder");
+      }
+      break;
+    case "D":
+      {
+        print("kötü");
+      }
+      break;
+    default:
+      {
+        print("bilinmeyen not");
+      }
+  }
 }
