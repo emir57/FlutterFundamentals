@@ -4,4 +4,5 @@ void main() {
   double oran = 1.15;
   print(text);
   print("Doğum yılı: " + dogumYili.toString());
+  print("Oran: " + oran.toString());
 }
