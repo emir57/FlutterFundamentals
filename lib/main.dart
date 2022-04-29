@@ -20,14 +20,14 @@ class MyApp extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            var alert = AlertDialog(
+            var alert = const AlertDialog(
               title: Text("Sınav sonucu"),
               content: Text("Geçti"),
             );
             showDialog(
                 context: context, builder: (BuildContext context) => alert);
           },
-          child: Text("Sonucu gör"),
+          child: const Text("Sonucu gör"),
         ),
       ),
     );
