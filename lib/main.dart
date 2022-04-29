@@ -9,10 +9,11 @@ void main() {
   // print(text);
   // print("Doğum yılı: " + dogumYili.toString());
   // print("Oran: " + oran.toString());
+  String titleMessage = "Merhaba ilk uygulamam";
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
-        title: Text("Merhaba ilk uygulama"),
+        title: Text(titleMessage),
       ),
     ),
   ));
