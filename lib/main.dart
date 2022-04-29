@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String titleMessage = "Hello world!";
+    int note = 65;
     return Scaffold(
       appBar: AppBar(
         title: Text(titleMessage),
