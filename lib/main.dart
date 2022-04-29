@@ -15,6 +15,9 @@ void main() {
       appBar: AppBar(
         title: Text(titleMessage),
       ),
+      body: Center(
+        child: Text("Gövde kısmı"),
+      ),
     ),
   ));
 }
