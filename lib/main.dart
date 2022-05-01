@@ -10,7 +10,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    String titleMessage = "Hello world!";
+    String titleMessage = "Flutter Title!";
     return Scaffold(
       appBar: AppBar(
         title: Text(titleMessage),
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            int score = 65;
+            int score = 45;
             String state = "";
             if (score >= 50) {
               state = "Geçti";
