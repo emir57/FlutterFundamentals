@@ -1,42 +1,18 @@
 import 'dart:js';
+import 'dart:core';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(home: MyApp()));
-}
+  var products = [];
+  products.add("Laptop");
+  products.add("Mouse");
+  products.add("Keyboard");
+  products.add("Monitor");
+  products.add("Microphone");
+  print(products);
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    String titleMessage = "Flutter Title!";
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(titleMessage),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            int score = 45;
-            String state = "";
-            if (score >= 50) {
-              state = "Geçti";
-            } else if (score >= 40) {
-              state = "Bütünleme";
-            } else {
-              state = "Kaldı";
-            }
-            var alert = AlertDialog(
-              title: Text("Sınav sonucu"),
-              content: Text(state),
-            );
-            showDialog(
-                context: context, builder: (BuildContext context) => alert);
-          },
-          child: const Text("Sonucu gör"),
-        ),
-      ),
-    );
-  }
+  var cities = ["Ankara", "İstanbul", "İzmir"];
+  print(cities);
 }
