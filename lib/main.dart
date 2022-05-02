@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String titleMessage = "Flutter Title!";
+    var students = ["Emir Gürbüz", "Emir Gürbüz2", "Emir Gürbüz3","Emir Gürbüz4"];
     return Scaffold(
         appBar: AppBar(
           title: Text(titleMessage),
@@ -18,13 +19,11 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: <Widget>[
             Expanded(
-              child: ListView(
-                children: <Widget>[
-                  Text("Emir Gürbüz"),
-                  Text("Emir Gürbüz2"),
-                  Text("Emir Gürbüz3"),
-                ],
-              ),
+              child: ListView.builder(
+                itemCount: students.length,
+                itemBuilder: (BuildContext context,int index){
+                  return Text(students[index]);
+                })
             ),
             Center(
               child: ElevatedButton(
