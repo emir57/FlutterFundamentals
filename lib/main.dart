@@ -12,4 +12,12 @@ void main() {
   for(var i = 0;i<products.length;i++){
     print(products[i]);
   }
+  for(var product in products){
+    print(product);
+  }
+  int sayi = 3;
+  while( sayi >0){
+    print(sayi);
+    sayi--;
+  }
 }
