@@ -9,3 +9,7 @@ void sayHello() {
 void sayHello2(String username) {
   print("Hello, " + username);
 }
+
+double calculate(double a, double percent) {
+  return a * (percent / 100);
+}
