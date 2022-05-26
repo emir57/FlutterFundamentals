@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 void main() {
   sayHello2("my_username");
 }
@@ -11,5 +13,6 @@ void sayHello2(String username) {
 }
 
 double calculate(double a, double percent) {
-  return a * (percent / 100);
+  var result = a * (percent / 100);
+  return result;
 }
